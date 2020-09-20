@@ -40,7 +40,7 @@ public void computePrimes(int n)
   
 
 ## (c) A test that infects the state, but does not propagate
-- Chạy hàm computePrime() với tham số 9 computePrime(9): do tham số bằng 11 nên sẽ gặp số 19 là số nguyên tố kết thúc bằng 9 và số 19 này sẽ không được thêm vào. Như vậy đã gặp lỗi nhưng lỗi này không lan truyền vì có thể số nguyên tố thứ 10 là số 29 vẫn sẽ được thêm vào.
+- Chạy hàm computePrime() với tham số 9 computePrime(9): do tham số bằng 9 nên sẽ gặp số 19 là số nguyên tố kết thúc bằng 9 và số 19 này sẽ không được thêm vào. Như vậy đã gặp lỗi nhưng lỗi này không lan truyền vì có thể số nguyên tố thứ 10 là số 29 vẫn sẽ được thêm vào.
 
 ## (d) A test that propagates, but does not reveal
 - Không thể sinh ra ca kiểm thử tương ứng do mỗi khi gặp lỗi thì lỗi này có thể quan sát được: các số nguyên tố kết thúc bằng 9 đều không có trong kết quả khi chạy toString().
